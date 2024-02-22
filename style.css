@@ -25,39 +25,46 @@
 
   a {
     color: inherit;
-    text-decoration: none; /* Remove underline if needed */
+    text-decoration: none; 
   }
 
   #banner {
     position: relative;
     width: auto;
-    height:480px;
-    overflow: hidden; /* Hide any overflow */
+    overflow: hidden; 
     background-color: #036eb0;
-    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1)), url('https://images.unsplash.com/photo-1600319760423-8872f2a46a5d'), blur(10px);
-    background-size: cover;
+    background-size: scale-down;
     background-position: center;
     color: white;
-    text-align: center; /* Center the text horizontally */
+    text-align: center; 
+    background: linear-gradient(90deg, #000000 0%, #0909794d 35%), url("https://images.unsplash.com/photo-1600319760423-8872f2a46a5d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 480px;
+    background-repeat: no-repeat;
+  }
+
+  #banner img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
   }
   
   #title {
     position: absolute;
-    top: 50%; /* Vertically center the text */
+    top: 50%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Adjust for vertical alignment */
+    transform: translate(-50%, -50%); 
   }
 
   .column {
-    float: left;  /* Float three columns side by side */
+    float: left;  
     width: 33.33%;
     padding: 0 10px;
-    object-fit: cover; /* Scale and crop the image to fit */ 
+    object-fit: cover; 
   }
   
   .row {
     margin: 0 40px;
-    margin-bottom: 40px; /* Adjust the value as needed */
+    margin-bottom: 40px;
     margin-top: 40px;
   }
   
@@ -81,26 +88,26 @@
       margin-bottom: 20px;   /* Responsive columns - one column layout (vertical) on small screens */
     }
     #banner {
-      height:auto;
+      height:360px;
     }
   }
 
   img {
-    max-width: 100%; /* Ensure images fit within their columns */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
   }
 
   .img-container {
     height: 195px;
-    overflow: hidden; /* Hide any overflow */
+    overflow: hidden; 
   }
   
   .img-container img {
-    width: 100%; /* Make the image fill the container width */
-    height: 100%; /* Maintain aspect ratio */
-    object-fit: cover; /* Scale and crop the image to fit */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
     display: flex;
-    justify-content: center; /* Horizontally center the image */
+    justify-content: center; 
   }
 
   .button-link {
@@ -112,26 +119,28 @@
     border-radius: 5px;
     font-weight: bold;
     flex: 1; /* Distribute available space equally between buttons */
-    margin-right: 5px; /* Add some spacing between buttons */
+    margin-right: 5px; 
     margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .button-link :hover {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 30px 30px;
     background-color: white;
     color: #036eb0;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    flex: 1; /* Distribute available space equally between buttons */
-    margin-right: 5px; /* Add some spacing between buttons */
+    flex: 1; 
+    margin-right: 5px;
     margin-left: 5px;
   }
   
   .link-container {
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: center; /* Vertically center the text */
+    display: flex;
+    align-items: center; 
     width: 100%;
     
   }
@@ -141,12 +150,14 @@
     color: white;
     text-align: center;
     display: flex;
-    align-items: center; /* Vertically center the text */
-    justify-content: center; /* Horizontally center the text */
+    align-items: center; 
+    justify-content: center;
     font-size: 0.8em;
     width: auto;
     height: 60px;
     overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
  
